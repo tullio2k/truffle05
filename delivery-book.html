@@ -72,12 +72,46 @@
           </div>
         </header>
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Schedule Your Delivery</p>
-                <p class="text-[#bbb39b] text-sm font-normal leading-normal">Select your preferred delivery date and time slot.</p>
-              </div>
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1"><div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+    <form id="confirm-order-form">
+        <h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Schedule Your Delivery</h2>
+
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Your Delivery Address</h3>
+        <div class="p-4">
+            <p id="user-delivery-address" class="text-gray-300">Loading address...</p>
+            <a href="user.html" class="text-sm text-[#f8bc06] hover:underline">Edit Address in Profile</a>
+        </div>
+
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Select Delivery Date (Sat/Sun only)</h3>
+        <div class="p-4">
+            <input type="date" id="delivery-date-input" class="form-input bg-[#27241b] text-white rounded-lg p-3 border border-[#554e3a] w-full md:w-2/3">
+        </div>
+
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Select Time Slot</h3>
+        <div id="time-slots-container" class="flex flex-wrap gap-3 p-4">
+            <p class="text-gray-400">Please select a date first to see available slots.</p>
+        </div>
+
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Order Summary</h3>
+        <div id="cart-summary-container" class="p-4 border-y border-y-[#403d2b] my-4">
+            <p class="text-gray-300">Loading cart...</p>
+        </div>
+
+        <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Delivery Notes (Optional)</h3>
+        <div class="p-4">
+            <textarea id="delivery-notes" placeholder="E.g., specific instructions for the driver" class="form-input flex w-full min-w-0 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#554e3a] bg-[#27241b] focus:border-[#554e3a] min-h-24 placeholder:text-[#bbb39b] p-3 text-base font-normal leading-normal"></textarea>
+        </div>
+
+        <div id="checkout-error-message" class="text-red-400 p-4 text-center font-medium"></div>
+
+        <div class="flex px-4 py-5 mt-4">
+            <button type="submit" class="flex w-full max-w-md mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#f8bc06] text-[#181611] text-base font-bold leading-normal tracking-[0.015em] hover:bg-yellow-400 transition-colors duration-150" disabled>
+                <span class="truncate">Confirm and Place Order</span>
+            </button>
+        </div>
+    </form>
+</div>
+</div>
             </div>
             <div class="flex flex-wrap items-center justify-center gap-6 p-4">
               <div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5">
@@ -229,5 +263,8 @@
         </div>
       </div>
     </div>
-  </body>
+  <script src="static/js/cart.js" defer></script>
+<script src="static/js/auth.js" defer></script>
+<script src="static/js/checkout.js" defer></script>
+</body>
 </html>

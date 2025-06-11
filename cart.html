@@ -81,7 +81,7 @@
                       <th class="table-8a3d2283-3b19-4349-a8ae-7254ebfc2907-column-416 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Subtotal</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="cart-items-container">
                     <tr class="border-t border-t-[#5c573d]">
                       <td class="table-8a3d2283-3b19-4349-a8ae-7254ebfc2907-column-56 h-[72px] px-4 py-2 w-14 text-sm font-normal leading-normal">
                         <div
@@ -129,7 +129,7 @@
             <div class="p-4">
               <div class="flex justify-between gap-x-6 py-2">
                 <p class="text-[#beb89d] text-sm font-normal leading-normal">Subtotal</p>
-                <p class="text-white text-sm font-normal leading-normal text-right">$125</p>
+                <p class="text-white text-sm font-normal leading-normal text-right" id="cart-subtotal">$125</p> <!-- Corrected ID and placeholder value -->
               </div>
               <div class="flex justify-between gap-x-6 py-2">
                 <p class="text-[#beb89d] text-sm font-normal leading-normal">Shipping</p>
@@ -137,13 +137,13 @@
               </div>
               <div class="flex justify-between gap-x-6 py-2">
                 <p class="text-[#beb89d] text-sm font-normal leading-normal">Total</p>
-                <p class="text-white text-sm font-normal leading-normal text-right">$125</p>
+                <p class="text-white text-sm font-normal leading-normal text-right" id="cart-total">$125</p> <!-- Corrected ID and placeholder value -->
               </div>
             </div>
             <div class="flex px-4 py-3">
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#f3efdc] text-[#1f1d14] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
+                id="proceed-to-checkout-button" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 flex-1 bg-[#f3efdc] text-[#1f1d14] text-sm font-bold leading-normal tracking-[0.015em]"
+              > <!-- Added ID to button -->
                 <span class="truncate">Proceed to Checkout</span>
               </button>
             </div>
@@ -151,5 +151,7 @@
         </div>
       </div>
     </div>
-  </body>
+  <script src="static/js/cart.js" defer></script>
+<script src="static/js/auth.js" defer></script>
+</body>
 </html>
