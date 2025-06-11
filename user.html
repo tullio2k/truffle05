@@ -1,102 +1,69 @@
 <html>
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <title>User Profile - Delizie al Tartufo</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#181611] dark group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-80">
-            <div class="flex h-full min-h-[700px] flex-col justify-between bg-[#181611] p-4">
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-3">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUA6jTu1JXfZX-8s9Ero8imJGw5IJSdqwYH9w_rWM50H4p402jvquHBwtrA4l_TVIjmrPFIUPPZCwWaziMtc_6mjooMCShLqKeVnsZjtlS2eK7VcwrjAuk6urYbn-zaIyl6rIymFgzkVxucI7Gu_nRsz018YGdfO5mQwJrVWXBKSxsIpXg4-oEljuhYr8iSw-_5DorafnWmFIjhHl8LVMqS9mJexgvKacsYL-mSd5FWJRtLbJtHm70smepXyhRZX-mLopUbHXQORo");'
-                  ></div>
-                  <h1 class="text-white text-base font-medium leading-normal">Elena Bianchi</h1>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-white text-sm font-medium leading-normal">I miei ordini</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#3a3527]"><p class="text-white text-sm font-medium leading-normal">Dati personali</p></div>
-                  <div class="flex items-center gap-3 px-3 py-2"><p class="text-white text-sm font-medium leading-normal">Indirizzi</p></div>
-                </div>
-              </div>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+</head>
+<body class="bg-[#1f1d14] text-white" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#403d2b] px-4 sm:px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+                 <a href="home.html" class="flex items-center gap-2 sm:gap-4">
+                    <div class="size-4">
+                      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path></svg>
+                    </div>
+                    <h2 class="text-white text-md sm:text-lg font-bold leading-tight tracking-[-0.015em]">Delizie al Tartufo</h2>
+                </a>
             </div>
-          </div>
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
-                <div class="flex gap-4">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8-B9pRg-U8kFSqwA9FQUWhVkBP3Mx2OdJA8hW0V_ucoAlr4rUIvZinn5FjNpwAIQUf8hsXKHYJ3BjipdmSq06RKO1_MTObcVSVLu4mTs8Gb9VpQSHii8eKG8e7IxQoj4PF5_TlYJ2Eitdr-zf0M0rVaIw2qoAQXMrTjwkkU70gWD76v_d3VrUtqencupSPCi6gruvd3zRJ_S-t1YHr6RyeAOLnOkbJJ5LoAVF7EpZ6a7xnOdmX9NyeT1WBpqsfC5ljm6kOPvz69s");'
-                  ></div>
-                  <div class="flex flex-col justify-center">
-                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Elena Bianchi</p>
-                    <p class="text-[#bbb39b] text-base font-normal leading-normal">elena.bianchi@email.com</p>
-                  </div>
-                </div>
-              </div>
+             <nav class="flex items-center gap-2 sm:gap-4">
+                <a href="catalog.html" class="text-white text-xs sm:text-sm font-medium leading-normal hover:text-yellow-300">Catalog</a>
+                <a id="nav-login" href="login.html" class="text-white text-xs sm:text-sm font-medium leading-normal" style="display:none;">Login</a>
+                <a id="nav-register" href="register.html" class="text-white text-xs sm:text-sm font-medium leading-normal" style="display:none;">Register</a>
+                <a id="nav-user-name" href="user.html" class="text-white text-xs sm:text-sm font-medium leading-normal" style="display:none;"></a>
+                <a id="nav-user-account" href="user.html" class="text-white text-xs sm:text-sm font-medium leading-normal hover:text-yellow-300" style="display:none;">My Account</a>
+                <a href="cart.html" id="nav-cart-button-text" class="text-white text-xs sm:text-sm font-medium leading-normal hover:text-yellow-300">Cart (0)</a>
+                <button id="nav-logout" class="text-white text-xs sm:text-sm font-medium leading-normal bg-red-600 px-2 py-1 rounded hover:bg-red-700" style="display:none;">Logout</button>
+                <div id="logout-error-message" class="text-red-400 text-xs hidden"></div>
+            </nav>
+        </header>
+
+        <main class="px-4 md:px-10 lg:px-20 xl:px-40 py-8">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl font-bold mb-8 text-yellow-400">My Account</h1>
+
+                <!-- User Details Section -->
+                <section id="user-details-section" class="mb-12 bg-[#27241b] p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6 text-white">My Details</h2>
+                    <div class="space-y-4 text-gray-300">
+                        <p><strong>Name:</strong> <span id="user-name">Loading...</span></p>
+                        <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+                        <div>
+                            <p class="mb-1"><strong>Current Delivery Address:</strong> <span id="user-address-display">Loading...</span></p>
+                            <form id="update-address-form" class="space-y-3 sm:space-y-0 sm:flex sm:items-end sm:gap-3">
+                                <label for="user-address-input" class="block text-sm font-medium text-gray-200 sr-only">Update Address:</label>
+                                <input type="text" id="user-address-input" name="address" placeholder="Enter new address" class="form-input bg-[#1f1d14] border border-[#403d2b] text-white rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 block w-full sm:flex-grow p-3 text-sm" />
+                                <button type="submit" class="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-[#1f1d14] font-semibold py-2.5 px-4 rounded-md text-sm transition-colors">Update Address</button>
+                            </form>
+                            <div id="address-update-message" class="text-sm mt-2"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Order History Section -->
+                <section id="order-history-section">
+                    <h2 class="text-2xl font-semibold mb-6 text-white">Order History</h2>
+                    <div id="order-history-container">
+                        <p class="text-gray-400">Loading order history...</p>
+                    </div>
+                </section>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Dati personali</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Nome</p>
-                <input
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#554e3a] bg-[#27241b] focus:border-[#554e3a] h-14 placeholder:text-[#bbb39b] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Cognome</p>
-                <input
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#554e3a] bg-[#27241b] focus:border-[#554e3a] h-14 placeholder:text-[#bbb39b] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Email</p>
-                <input
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#554e3a] bg-[#27241b] focus:border-[#554e3a] h-14 placeholder:text-[#bbb39b] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Telefono</p>
-                <input
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#554e3a] bg-[#27241b] focus:border-[#554e3a] h-14 placeholder:text-[#bbb39b] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-end">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f8bc06] text-[#181611] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Salva</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+        </main>
     </div>
-  </body>
+
+    <script src="static/js/auth.js" defer></script>
+    <script src="static/js/cart.js" defer></script> <!-- For updateCartIcon -->
+    <script src="static/js/user.js" defer></script>
+</body>
 </html>
